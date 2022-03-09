@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+	   	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        
+        -->
+        
+        <title>Mastermind</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class = "column">
+            <h1 class="title">Text Analyzer</h1>
+            <!--<div id="timer">10.0</div>-->
+        </div>
+        <section>
+            <div class="form">
+                <div>
+                    <textarea class="text" id="text" rows="15"></textarea>
+                </div>
+                <div><input 
+                    type="submit" 
+                    name="send" 
+                    class="btn"
+                    id="btn-analyze"
+                    value="Analyze" 
+                    onkeypress="enter"
+                    onclick={analyze()}
+                    />
+                </div>
+            </div>
+            <div class="titre_resultat" id="id_titre_texte">
+            </div>
+            <div class="titre_resultat" id="id_longueur">
+            </div>
+            <div class="titre_resultat" id="id_nb_mot">
+            </div>
+            <div class="titre_resultat" id="id_nb_e">
+            </div>
+            <div class="titre_resultat" id="id_rep_lettre">
+            </div>
+
+        
+        </section>
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>
+
