@@ -15,8 +15,8 @@ console.warn('!');
 });*/
 
 const analyze = () => {
-            console.log("Analyze");
-            var textArea = document.getElementById('text').value;
+        console.log("Analyze");
+        var textArea = document.getElementById('text').value;
         
         /* On ajoute les titres à chaque section résultat*/
         if(init === 0)
@@ -44,12 +44,13 @@ const analyze = () => {
                 cpt++
             }
         }
-        
         divResult.innerHTML = cpt;
+        
+        divResult.innerHTML = 6;
         document.querySelector('#id_nb_e').appendChild(divResult);
         cpt = 0
 
-        var nbMot = 0
+        var nbMot = 1
 
         for(var i=0; i<textArea.length;i++)
         {
@@ -61,12 +62,13 @@ const analyze = () => {
         
         divResult.innerHTML = nbMot;
         document.querySelector('#id_nb_mot').append(divResult);
-        nbMot = 0
 
+        nbMot = 0
+        /*
         for(var i=0; i<textArea.length;i++)
         {
             if(((textArea.charCodeAt(i) > 64 && textArea.charCodeAt(i) < 91) || (textArea.charCodeAt(i) > 96 && textArea.charCodeAt(i) < 123))
-            && isLettre(textArea.charCodeAt(i)))
+            && (textArea.charAt(i) in letter))
             {
                 lettre += textArea.charCodeAt(i);
                     
@@ -78,12 +80,14 @@ const analyze = () => {
             }
         }
         
-        divResult.innerHTML = nbMot;
-        document.querySelector('#id_nb_mot').append(divResult);
-        nbMot = 0
+        divResult.innerHTML = lettre;
+        document.querySelector('#id_rep_lettre').append(divResult);
+        divResult.innerHTML = nbLettre;
+        document.querySelector('#id_rep_lettre').append(divResult);
+        nbLettre = 0*/
 }
 
-
+/*
 fonction isLettre(newLettre)
 {
     var lettrePresente = false;
@@ -93,11 +97,11 @@ fonction isLettre(newLettre)
     }
     
     
-    */
+    
     if (!(newLettre in lettre))
         lettrePresente = true;
     console.log(lettrePresente);
     return lettrePresente;
 }
-
+*/
 
